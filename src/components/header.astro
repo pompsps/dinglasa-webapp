@@ -1,0 +1,22 @@
+---
+const navList = [
+    { name: "Projects", href: "./projects" },
+    { name: "Company", href: "./company" },
+    { name: "Contact", href: "./contact" },
+];
+---
+
+<div class="header flex place-items-center justify-between p-5">
+    <a href="/">Dinglasa Architects</a>
+    <div>
+        <ul class="flex gap-20">
+            {
+                navList.map((item) => (
+                    <li>
+                        <a href={item.href}>{item.name}</a>
+                    </li>
+                ))
+            }
+        </ul>
+    </div>
+</div>

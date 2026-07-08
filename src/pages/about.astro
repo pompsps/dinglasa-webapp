@@ -1,0 +1,39 @@
+---
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+
+const pageTitle = "About me";
+
+const arr = ["2asdasda", "21321asd3"];
+---
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{pageTitle}</title>
+    </head>
+    <body>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/blog">Blog</a>
+
+        <h1>{pageTitle}</h1>
+        <h2>... and my new Astro site!</h2>
+        {
+            arr.map((item) => {
+                <div>{item}</div>;
+            })
+        }
+
+        <p>
+            I am working through Astro's introductory tutorial. This is the
+            second page on my website, and it's the first one I built myself!
+        </p>
+
+        <p>
+            This site will update as I complete more of the tutorial, so keep
+            checking back and see how my journey is going!
+        </p>
+    </body>
+</html>
